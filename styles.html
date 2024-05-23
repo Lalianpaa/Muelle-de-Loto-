@@ -1,146 +1,203 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0f7fa;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
 
-header {
-    background-color: #0288d1;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background-color: #0288d1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-nav {
-    background-color: #0277bd;
-}
+        nav {
+            background-color: #0277bd;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 25px;
-    display: block;
-    font-size: 1.2em;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+            font-size: 1.2em;
+        }
 
-nav ul li a:hover {
-    background-color: #01579b;
-    border-radius: 5px;
-}
+        nav ul li a:hover {
+            background-color: #01579b;
+            border-radius: 5px;
+        }
 
-main {
-    padding: 20px;
-}
+        main {
+            padding: 20px;
+        }
 
-.pestaña {
-    display: none;
-}
+        .pestaña {
+            display: none;
+        }
 
-.pestaña:target {
-    display: block;
-}
+        .pestaña:target {
+            display: block;
+        }
 
-.pestaña h2 {
-    color: #01579b;
-    border-bottom: 2px solid #01579b;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+        .pestaña h2 {
+            color: #01579b;
+            border-bottom: 2px solid #01579b;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
 
-.pestaña p {
-    background-color: #b3e5fc;
-    padding: 20px;
-    border: 1px solid #81d4fa;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
+        .pestaña p {
+            background-color: #b3e5fc;
+            padding: 20px;
+            border: 1px solid #81d4fa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
 
-.responsive {
-    width: 100%;
-    height: auto;
-}
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
 
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.gallery img {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 5px solid #0288d1;
-    border-radius: 5px;
-}
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 5px solid #0288d1;
+            border-radius: 5px;
+        }
 
-blockquote {
-    background-color: #e1f5fe;
-    border-left: 5px solid #0288d1;
-    margin: 20px 0;
-    padding: 10px 20px;
-    font-style: italic;
-}
+        blockquote {
+            background-color: #e1f5fe;
+            border-left: 5px solid #0288d1;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-style: italic;
+        }
 
-form {
-    background-color: #b3e5fc;
-    padding: 20px;
-    border: 1px solid #81d4fa;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
+        form {
+            background-color: #b3e5fc;
+            padding: 20px;
+            border: 1px solid #81d4fa;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
 
-form label {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
+        form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-form input, form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #81d4fa;
-    border-radius: 5px;
-}
+        form input, form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #81d4fa;
+            border-radius: 5px;
+        }
 
-form button {
-    background-color: #0288d1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-}
+        form button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
 
-form button:hover {
-    background-color: #01579b;
-}
+        form button:hover {
+            background-color: #01579b;
+        }
 
-footer {
-    background-color: #0288d1;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+        footer {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Webpage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="home" class="pestaña">
+            <h2>Welcome to My Website</h2>
+            <p>This is the home section. Enjoy your stay!</p>
+        </div>
+        <div id="about" class="pestaña">
+            <h2>About Us</h2>
+            <p>Learn more about what we do.</p>
+        </div>
+        <div id="gallery" class="pestaña">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1" class="responsive">
+                <img src="image2.jpg" alt="Image 2" class="responsive">
+                <img src="image3.jpg" alt="Image 3" class="responsive">
+            </div>
+        </div>
+        <div id="contact" class="pestaña">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
